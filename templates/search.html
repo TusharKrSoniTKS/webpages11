@@ -1,0 +1,46 @@
+<html>
+    <head><title>Google copy</title></head>
+    <body style="background-color: rgb(122, 161, 233);">
+
+        <!-- BOOTSTRAP FOR DESIGNING  -->
+        {%extends 'bootstrap/base.html'%}
+
+
+
+        {%block content%}
+
+
+        <!-- Code of extends file ------------*------------*--------------*-----------*---------------* -->
+        <h1><p align='center'><u>Search Engine </u></p></h1>
+        <!-- <br><br><br> -->
+        <br>
+        <a href="/index"><p align='center'><img src="{{url_for('static',filename='tks.png')}}"  height="100" width="500"></p></a>
+        <p>
+            <h2>
+                <form method="POST" align='center' >
+                    <input class='input' name=word type="text" id="word">
+                    <button class=" control "> Search </button>
+                </form>
+            </h2>
+        </p>
+        <!-- ---------*-----------*-------------*----------*---------------*------------*-------------* -->
+
+        
+
+        {%for x in range(l)%}
+
+        <p align='left'><b>{{ links[x].title }}</b></p>
+        <p align='left'><a href="{{ links[x].lin}}">{{links[x].displin}}</a></p>
+        
+        <font style="font-family:courier;color:darkmagenta;">{{links[x].snipp}}</font>
+        <hr>
+        <hr>
+
+        {%endfor%}
+
+
+        {%endblock%}
+        
+        
+    </body>
+</html>

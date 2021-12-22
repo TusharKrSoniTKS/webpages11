@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="url_for('static',filename='index.css')">
+    </head>
+    <body background="https://previews.123rf.com/images/valentint/valentint1611/valentint161101687/65257152-survey-icon-survey-website-button-on-red-low-poly-background-.jpg">
+        <div class="heading" style="background-color: aqua;">
+            <p align='center'><font style="font-family: 'Montserrat', sans-serif; " size='100'>{{info.title}}</font></p>
+        
+
+        <hr>
+    </div>
+        <br>
+        {%for info in ll%}
+        <div style="background-color: chocolate;">
+            <font style="font-family: 'Bebas Neue', cursive;
+        font-family: 'Montserrat', sans-serif;" size=50><u>{{info.ins}}</u></font>
+        </div>
+
+        <div style="background-color: rgb(98, 184, 131) ;">
+            
+            <table border="3" bgcolor="grey"cellspacing='3' cellpadding='3' width=30% >
+                <tr>
+                    <th>Year</th>
+                    <th>No: of Institutes</th>
+                </tr>
+                <tr>
+                    <td>1966-1967</td>
+                    <td align="center">{{info.yr66_67}}</td>
+                </tr>
+                <tr>
+                    <td>1970-1971</td>
+                    <td align="center">{{info.yr70_71}}</td>
+                </tr>
+                <tr>
+                    <td>1975-1976</td>
+                    <td align="center">{{info.yr75_76}}</td>
+                </tr>
+                <tr>
+                    <td>1980-1981</td>
+                    <td align="center">{{info.yr80_81}}</td>
+                </tr>
+                <tr>
+                    <td>1985-1986</td>
+                    <td align="center">{{info.yr85_86}}</td>
+                </tr>
+                <tr>
+                    <td>1990-1991</td>
+                    <td align="center">{{info.yr90_91}}</td>
+                </tr>
+                <tr>
+                    <td>1995-1996</td>
+                    <td align="center">{{info.yr95_96}}</td>
+                </tr>
+                <tr>
+                    <td>2000-2001</td>
+                    <td align="center">{{info.yr00_01}}</td>
+                </tr>
+                <tr>
+                    <td>2005-2006</td>
+                    <td align="center">{{info.yr05_06}}</td>
+                </tr>
+                <tr>
+                    <td>2010-2011</td>
+                    <td align="center">{{info.yr10_11}}</td>
+                </tr>
+                <tr>
+                    <td>2013-2013</td>
+                    <td align="center">{{info.yr12_13}}</td>
+                </tr>
+    
+            </table>
+        </div>
+            {%endfor%}
+            <hr>
+        
+        
+
+        
+    </body>
+</html>

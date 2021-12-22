@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div hidden>
+            {%block title%}TKS Resources{%endblock%}
+        </div>
+
+        {% extends 'bootstrap/base.html' %}
+        {% block content %}
+        <!-- -----------------------------------------------------Welcome Block------------------------------------------ -->
+        <hr>
+        <h1>
+            <div style="background-color:darkblue; font-family: 'Bebas Neue', cursive;
+            font-family: 'Comforter Brush', cursive;
+            font-family: 'Montserrat', sans-serif; ">
+                <br>
+                <p align='center'> <b><u><font color='white'size=32px >Welcome</font></u></b></p>
+                <br>
+            </div> </h1>
+            
+        
+        <!-- --------------------------------------------------------------------------------------- -->
+
+
+
+
+        <div style="background-color: cyan;">
+            <p align='center'><img src="{{url_for('static',filename='tks_index.png')}}" width=60% height=40%></p>
+        </div>
+
+
+        <br>
+        <ul>
+<!-- -------------------------------------------SEARCH ENGINE LINK---------------------------------------------------------------------------------------  -->
+
+            <li><div class="alert alert-info" role="alert">
+                <a href="\search" class="alert-link">Search Engine</a>
+                </div>
+                
+            </li>
+<!-- ---------------------------------------------------------------------------------------  -->
+
+
+<!-- -------------------------------------------HARYANA EDUCATIONAL REPORT---------------------------------------------------------------------------------------  -->
+
+            <li><div class="alert alert-info" role="alert">
+                <a href="\haryana" class="alert-link">Haryana Educational Report (from 1966-67 to 2012-13( R))</a>
+                </div>
+            </li>
+<!-- ---------------------------------------------------------------------------------------  -->
+
+
+
+        </ul>
+        <br>
+
+        
+
+
+        <!-- <ul>
+            <li><a href="\search"><b>Search Engine </b></a></li>
+        </ul>
+        {% endblock %} -->
+        <!-- ----------------------------------- addding css files  -------------------------------------------- -->
+        {%block styles %}
+        {{super()}}
+        <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+        {%endblock%}
+        <!-- ---------------------------------------------------------------------------------------  -->
+    </body>
+</html>
